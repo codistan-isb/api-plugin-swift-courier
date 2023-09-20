@@ -1,0 +1,76 @@
+type apiUploadPayload {
+  ORDER_ID: String
+  ORDER_TYPE: String
+  CONSIGNEE_FIRST_NAME: String
+  CONSIGNEE_PHONE: String
+  CONSIGNEE_CITY: String
+  CONSIGNEE_ADDRESS: String
+  PACKAGING: String
+  ORIGIN_CITY: String
+  PIECES: Int
+  COD: Int
+  DESCRIPTION: String
+  WEIGHT: Float
+  SHIPPER_ADDRESS_ID: String
+}
+input apiUploadInput {
+  ORDER_ID: String
+  ORDER_TYPE: String
+  CONSIGNEE_FIRST_NAME: String
+  CONSIGNEE_PHONE: String
+  CONSIGNEE_CITY: String
+  CONSIGNEE_ADDRESS: String
+  PACKAGING: String
+  ORIGIN_CITY: String
+  PIECES: Int
+  COD: Int
+  DESCRIPTION: String
+  WEIGHT: Float
+  SHIPPER_ADDRESS_ID: String
+}
+type apiUploadResponse {
+  consigneeName: String
+  # example: Umar Zahid 1
+  consigneeEmail: String
+  # example: ABC123@gmail.com
+  consigneePhone: String
+  # example: 03004398645
+  consigneeAddress: String
+  # example: H.no. 233 main boulevard airline society near ucp lahore.
+  consigneeCity: String
+  # example: Lahore
+  parcelId: String
+  # example: LHE223404017421
+  qty: Int
+  # example: 1
+  weight: Float
+  # example: 0.45
+  specialHandlings: String
+  # example:
+  description: String
+  # example: 1 x ATS-0634
+  orderId: String
+  # example: 111-AA
+  shipperName: String
+  # example: Swyft test Portal
+  shipperAddress: String
+  # example: 70 G gulberg 3 lahore
+  shipperCity: String
+  # example: Lahore
+  paymentMode: String
+  # example: COD
+  amount: Int
+  # example: 700
+  label: String
+  serviceType: String
+  deliveryMode: String
+  isAllowToOpenParcel: String
+  zoneInfo: String
+  reverse: String
+  brandName: String
+  pickupLocationCity: String
+  pickupLocation: String
+}
+type Mutation {
+  apiUploadSwift(input: apiUploadInput): apiUploadResponse
+}
