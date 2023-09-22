@@ -1,0 +1,14 @@
+input standardLabelUrlsInput {
+  parcel_ids: String
+  response_type: String
+}
+type standardLabelUrlsResponse {
+  status: String
+  code: Int
+  message: String
+}
+type Mutation {
+  apiGetStandardLabelUrlsSwift(
+    input: standardLabelUrlsInput
+  ): standardLabelUrlsResponse
+}

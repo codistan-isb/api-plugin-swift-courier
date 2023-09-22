@@ -1,6 +1,6 @@
 input parcelReverseInput {
-  parcelId: String
-  dropOffLocationId: String
+  parcelId: String!
+  dropOffLocationId: String!
 }
 type apiUploadResponse {
   consigneeName: String

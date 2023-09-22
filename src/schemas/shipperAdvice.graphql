@@ -1,0 +1,40 @@
+type shipperAdvicePayload {
+  CN: String
+  vendorOrderId: String
+  currentStatus: String
+
+  currentStatusDate: String
+  riderRemarks: String
+
+  codAmount: Int
+  timeRemaining: Int
+
+  totalAttempts: Int
+
+  customerAddress: String
+
+  customerPhone: String
+
+  customerName: String
+}
+input createShipperAdviceInput {
+  requestedStatus: requestedStatusInput
+  remarks: String
+  parcelId: String
+}
+enum requestedStatusInput {
+  returnToVendor
+  requestForReattempt
+}
+type createShipperAdviceResponse {
+  data: String
+}
+type Mutation {
+  createShipperAdviceSwift(
+    input: createShipperAdviceInput
+  ): createShipperAdviceResponse
+}
+type Query {
+  getShipperAdviceSwift(id: ID!): [shipperAdvicePayload]
+  getShipperAdviceHistorySwift(id: ID!): [shipperAdvicePayload]
+}

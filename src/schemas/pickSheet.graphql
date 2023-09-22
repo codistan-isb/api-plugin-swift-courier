@@ -1,7 +1,7 @@
 input pickSheetInput {
-  vendorId: String
-  parcel_ids: String
-  pl_code: String
+  vendorId: String!
+  parcel_ids: String!
+  pl_code: String!
 }
 type Query {
   pickSheetSwift(input: pickSheetInput): Boolean

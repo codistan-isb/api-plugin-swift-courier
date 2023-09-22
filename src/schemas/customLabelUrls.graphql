@@ -1,0 +1,15 @@
+input customLabelUrlsInput {
+  parcel_ids: String
+  dimensions: String
+}
+type customLabelUrlsResponse {
+  status: String
+  code: Int
+  message: String
+}
+
+type Mutation {
+  apiGetCustomLabelUrlsSwift(
+    input: customLabelUrlsInput
+  ): customLabelUrlsResponse
+}

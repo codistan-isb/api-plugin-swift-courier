@@ -14,19 +14,19 @@ type apiUploadPayload {
   SHIPPER_ADDRESS_ID: String
 }
 input apiUploadInput {
-  ORDER_ID: String
-  ORDER_TYPE: String
-  CONSIGNEE_FIRST_NAME: String
-  CONSIGNEE_PHONE: String
-  CONSIGNEE_CITY: String
-  CONSIGNEE_ADDRESS: String
-  PACKAGING: String
-  ORIGIN_CITY: String
-  PIECES: Int
-  COD: Int
-  DESCRIPTION: String
-  WEIGHT: Float
-  SHIPPER_ADDRESS_ID: String
+  ORDER_ID: String!
+  ORDER_TYPE: String!
+  CONSIGNEE_FIRST_NAME: String!
+  CONSIGNEE_PHONE: String!
+  CONSIGNEE_CITY: String!
+  CONSIGNEE_ADDRESS: String!
+  PACKAGING: String!
+  ORIGIN_CITY: String!
+  PIECES: Int!
+  COD: Int!
+  DESCRIPTION: String!
+  WEIGHT: Float!
+  SHIPPER_ADDRESS_ID: String!
 }
 type apiUploadResponse {
   consigneeName: String
