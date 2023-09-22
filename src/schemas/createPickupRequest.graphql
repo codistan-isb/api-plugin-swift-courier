@@ -1,0 +1,15 @@
+input createPickupRequestPayload {
+  estimatedParcels: Int
+  timeSlotId: String
+  pickupLocationId: String
+  date: String
+}
+type createPickupRequestResponse {
+  id: String
+}
+
+type Mutation {
+  createPickupRequestSwift(
+    input: createPickupRequestPayload
+  ): createPickupRequestResponse
+}

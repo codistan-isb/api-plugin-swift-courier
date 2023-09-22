@@ -1,5 +1,7 @@
 var secretApiKey = process.env.SWIFT_API_SECRET;
 var venderID = process.env.SWIFT_VENDER_ID;
+var baseUrl = process.env.SWIFT_BASE_URL;
+
 import fetch from "node-fetch";
 import ReactionError from "@reactioncommerce/reaction-error";
 
@@ -53,8 +55,9 @@ export default async function apiUploadSwift(context, input) {
     redirect: "follow",
   };
   try {
+    // `${baseUrl}/${venderID}/parcel-reverse?vendorId=${venderID}`,
     let response = await fetch(
-      `https://gateway-prod.swyftlogistics.com/vendor/api/${venderID}/api-upload`,
+      `${baseUrl}/${venderID}/api-upload`,
       requestOptions
     );
     let result = await response.json();

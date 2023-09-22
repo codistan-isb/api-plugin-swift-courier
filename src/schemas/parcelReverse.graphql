@@ -1,0 +1,58 @@
+input parcelReverseInput {
+  parcelId: String
+  dropOffLocationId: String
+}
+type apiUploadResponse {
+  consigneeName: String
+
+  consigneeEmail: String
+
+  consigneePhone: String
+
+  consigneeAddress: String
+
+  consigneeCity: String
+
+  parcelId: String
+
+  qty: Int
+
+  weight: Float
+
+  specialHandlings: String
+
+  description: String
+
+  orderId: String
+
+  shipperName: String
+
+  shipperAddress: String
+
+  shipperCity: String
+
+  paymentMode: String
+
+  amount: Int
+
+  label: String
+
+  serviceType: String
+
+  deliveryMode: String
+
+  isAllowToOpenParcel: String
+
+  zoneInfo: String
+
+  reverse: String
+
+  brandName: String
+
+  pickupLocationCity: String
+
+  pickupLocation: String
+}
+type Mutation {
+  parcelReverseSwift(input: parcelReverseInput): apiUploadResponse
+}
