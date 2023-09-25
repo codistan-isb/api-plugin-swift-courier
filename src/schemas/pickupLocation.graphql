@@ -1,0 +1,41 @@
+input pickupLocaionPayload {
+  fname: String
+  lname: String
+  email: String
+  phone: String
+  brandName: String
+  cityId: String
+  shortId: String
+  zoneAreaId: String
+  zoneId: String
+  address: String
+  isActive: Boolean
+  timeSlotIds: [String]
+  geoPoints: geoPointsPayload
+}
+input geoPointsPayload {
+  lng: Float
+  lat: Float
+}
+type pickupLocaionResponse {
+  fname: String
+  lname: String
+  email: String
+  phone: String
+  brandName: String
+  cityId: String
+  shortId: String
+  zoneAreaId: String
+  zoneId: String
+  address: String
+  isActive: Boolean
+  timeSlotIds: [String]
+  geoPoints: geoPointsResponse
+}
+type geoPointsResponse {
+  lng: Float
+  lat: Float
+}
+type Mutation {
+  apiPickupLocationsSwift(input: pickupLocaionPayload): pickupLocaionResponse
+}

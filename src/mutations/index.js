@@ -7,6 +7,7 @@ import apiGetStandardLabelUrlsSwift from "./apiGetStandardLabelUrlsSwift.js";
 import apiFetchLabelsSwift from "./apiFetchLabelsSwift.js";
 import apiCancelParcelSwift from "./apiCancelParcelSwift.js";
 import apiCancelMultipleParcelsSwift from "./apiCancelMultipleParcelsSwift.js";
+import apiPickupLocationsSwift from "./apiPickupLocationsSwift.js";
 
 export default {
   apiUploadSwift,
@@ -18,4 +19,5 @@ export default {
   apiFetchLabelsSwift,
   apiCancelParcelSwift,
   apiCancelMultipleParcelsSwift,
+  apiPickupLocationsSwift,
 };
