@@ -1,0 +1,12 @@
+input FetchLabelsInput {
+  parcel_ids: String
+  response_type: String
+}
+type FetchLabelsInputResponse {
+  status: String
+  code: Int
+  message: String
+}
+type Mutation {
+  apiFetchLabelsSwift(input: FetchLabelsInput): FetchLabelsInputResponse
+}

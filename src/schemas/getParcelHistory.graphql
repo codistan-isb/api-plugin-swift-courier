@@ -1,0 +1,13 @@
+input getParcelHistoryPayload {
+  vendorId: String
+  parcelId: String
+}
+type getParcelHistoryResponse {
+  date: String
+  status: String
+}
+type Query {
+  apiGetParcelHistorySwift(
+    input: getParcelHistoryPayload
+  ): [getParcelHistoryResponse]
+}

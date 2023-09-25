@@ -1,0 +1,16 @@
+input cancelParcelPayload {
+  vendorId: String
+  parcelId: String
+}
+type cancelParcelResponse {
+  message: String
+}
+input CancelParcelsPayload {
+  parcels: String
+}
+type Mutation {
+  apiCancelParcelSwift(input: cancelParcelPayload): cancelParcelResponse
+  apiCancelMultipleParcelsSwift(
+    input: CancelParcelsPayload
+  ): cancelParcelResponse
+}

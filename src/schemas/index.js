@@ -6,6 +6,9 @@ const parcelReverse = importAsString("./parcelReverse.graphql");
 const createPickupRequest = importAsString("./createPickupRequest.graphql");
 const customLabelUrls = importAsString("./customLabelUrls.graphql");
 const standardLabelUrls = importAsString("./standardLabelUrls.graphql");
+const FetchLabels = importAsString("./FetchLabels.graphql");
+const cancelParcel = importAsString("./cancelParcel.graphql");
+const getParcelHistory = importAsString("./getParcelHistory.graphql");
 
 export default [
   apiUpload,
@@ -15,4 +18,7 @@ export default [
   shipperAdvice,
   customLabelUrls,
   standardLabelUrls,
+  FetchLabels,
+  cancelParcel,
+  getParcelHistory,
 ];
