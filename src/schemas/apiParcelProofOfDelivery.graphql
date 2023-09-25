@@ -1,0 +1,33 @@
+input apiParcelProofOfDeliveryPayload {
+  vendorId: String
+  parcelId: String
+}
+type getParcelProofOfDeliveryResponse {
+  attempts: Int
+  currentStatus: String
+  attempt: attemptResponse
+}
+type attemptResponse {
+  status: String
+  statusDate: String
+  riderReason: String
+  riderEplanation: String
+  lat: Float
+  lng: Float
+  image: String
+  history: [historyResponse]
+}
+type historyResponse {
+  status: String
+  statusDate: String
+  riderReason: String
+  riderEplanation: String
+  lat: Float
+  lng: Float
+  image: String
+}
+type Query {
+  apiParcelProofOfDeliverySwift(
+    input: apiParcelProofOfDeliveryPayload
+  ): getParcelProofOfDeliveryResponse
+}

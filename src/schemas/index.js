@@ -10,6 +10,9 @@ const FetchLabels = importAsString("./FetchLabels.graphql");
 const cancelParcel = importAsString("./cancelParcel.graphql");
 const getParcelHistory = importAsString("./getParcelHistory.graphql");
 const parcelWeightHistory = importAsString("./parcelWeightHistory.graphql");
+const apiParcelProofOfDelivery = importAsString(
+  "./apiParcelProofOfDelivery.graphql"
+);
 
 export default [
   parcelWeightHistory,
@@ -23,4 +26,5 @@ export default [
   FetchLabels,
   cancelParcel,
   getParcelHistory,
+  apiParcelProofOfDelivery,
 ];
