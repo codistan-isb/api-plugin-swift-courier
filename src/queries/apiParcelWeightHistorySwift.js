@@ -4,7 +4,7 @@ var baseUrl = process.env.SWIFT_BASE_URL;
 import fetch from "node-fetch";
 import ReactionError from "@reactioncommerce/reaction-error";
 
-export default async function apiGetParcelHistorySwift(context, input) {
+export default async function apiParcelWeightHistorySwift(context, input) {
   //   console.log("input", input);
   let { parcelId } = input;
   var myHeaders = {
@@ -19,11 +19,11 @@ export default async function apiGetParcelHistorySwift(context, input) {
   try {
     // `${baseUrl}/${venderID}/parcel-reverse?vendorId=${venderID}`,
     let response = await fetch(
-      `${baseUrl}/${venderID}/parcel-weight-history/${parcelId}`,
+      `${baseUrl}/${venderID}/get-parcel-history/${parcelId}`,
       requestOptions
     );
     let result = await response.json();
-    console.log("parcel-weight-history", result);
+    // console.log(result);
     return result;
   } catch (error) {
     console.log("error", error);

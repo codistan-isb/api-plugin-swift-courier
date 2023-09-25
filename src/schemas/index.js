@@ -9,8 +9,10 @@ const standardLabelUrls = importAsString("./standardLabelUrls.graphql");
 const FetchLabels = importAsString("./FetchLabels.graphql");
 const cancelParcel = importAsString("./cancelParcel.graphql");
 const getParcelHistory = importAsString("./getParcelHistory.graphql");
+const parcelWeightHistory = importAsString("./parcelWeightHistory.graphql");
 
 export default [
+  parcelWeightHistory,
   apiUpload,
   pickSheet,
   parcelReverse,

@@ -1,0 +1,24 @@
+input parcelWeightHistoryPayload {
+  vendorId: String
+  parcelId: String
+}
+type parcelWeightHistoryResponse {
+  weight: Float
+  denseWeightHistory: [denseWeightHistoryPayload]
+  volumetricWeightHistory: volumetricWeightHistoryPayload
+}
+type denseWeightHistoryPayload {
+  weight: Float
+  createdAt: String
+  source: String
+}
+type volumetricWeightHistoryPayload {
+  weight: Float
+  createdAt: String
+  source: String
+}
+type Query {
+  apiParcelWeightHistorySwift(
+    input: parcelWeightHistoryPayload
+  ): parcelWeightHistoryResponse
+}
