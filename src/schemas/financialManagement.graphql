@@ -1,0 +1,22 @@
+input financialManagementPayload {
+  parcelIds: [String]!
+}
+type financialManagementResponse {
+  id: String
+  paymentStatus: String
+  invoiceNumber: String
+  invoiceDate: String
+  finalCOD: String
+  swyftCharge: Int
+  paymentDate: String
+  currentParcelStatus: String
+  weight: Float
+  currentStatusDate: String
+  gst: Int
+  shippingType: String
+}
+type Mutation {
+  apiFinancialManagementSwift(
+    input: financialManagementPayload
+  ): [financialManagementResponse]
+}

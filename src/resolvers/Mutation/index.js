@@ -8,6 +8,7 @@ import apiFetchLabelsSwift from "./apiFetchLabelsSwift.js";
 import apiCancelParcelSwift from "./apiCancelParcelSwift.js";
 import apiCancelMultipleParcelsSwift from "./apiCancelMultipleParcelsSwift.js";
 import apiPickupLocationsSwift from "./apiPickupLocationsSwift.js";
+import apiFinancialManagementSwift from "./apiFinancialManagementSwift.js";
 export default {
   apiUploadSwift,
   parcelReverseSwift,
@@ -19,4 +20,5 @@ export default {
   apiCancelParcelSwift,
   apiCancelMultipleParcelsSwift,
   apiPickupLocationsSwift,
+  apiFinancialManagementSwift,
 };
