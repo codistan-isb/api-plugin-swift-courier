@@ -21,7 +21,7 @@ export default async function apiPickupLocationsSwift(context, input) {
     timeSlotIds,
     geoPoints,
   } = input;
-  let { lat, lng } = geoPoints;
+
   var myHeaders = {
     Authorization: secretApiKey,
     "Content-Type": "application/json",

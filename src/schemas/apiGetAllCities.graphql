@@ -1,0 +1,23 @@
+input getAllCitiesPayload {
+  vendorId: String!
+}
+type getAllCitiesResponse {
+  name: String
+  code: String
+  cities: [citiesName]
+  id: String
+  stateId: String
+  cityCode: String
+  geoPoints: geoPointsResponse
+}
+type geoPointsResponse {
+  type: String
+  coordinates: [Float]
+}
+type citiesName {
+  isActive: Boolean
+  name: String
+}
+type Query {
+  apiGetAllCitiesSwift(input: getAllCitiesPayload): [getAllCitiesResponse]
+}

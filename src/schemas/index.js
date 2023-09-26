@@ -14,6 +14,9 @@ const apiParcelProofOfDelivery = importAsString(
   "./apiParcelProofOfDelivery.graphql"
 );
 const pickupLocation = importAsString("./pickupLocation.graphql");
+const apiGetPackageTypes = importAsString("./apiGetPackageTypes.graphql");
+const apiGetAllCities = importAsString("./apiGetAllCities.graphql");
+
 export default [
   parcelWeightHistory,
   apiUpload,
@@ -28,4 +31,6 @@ export default [
   getParcelHistory,
   apiParcelProofOfDelivery,
   pickupLocation,
+  apiGetPackageTypes,
+  apiGetAllCities,
 ];

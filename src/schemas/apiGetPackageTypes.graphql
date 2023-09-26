@@ -1,0 +1,14 @@
+input getPackageTypesPayload {
+  vendorId: String!
+}
+type getPackagingTypeResponse {
+  name: String
+  sheetValue: String
+  dimensions: String
+  weight: Int
+}
+type Query {
+  apiGetPackageTypesSwift(
+    input: getPackageTypesPayload
+  ): [getPackagingTypeResponse]
+}

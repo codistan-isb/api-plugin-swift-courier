@@ -4,10 +4,15 @@ import getShipperAdviceHistorySwift from "./getShipperAdviceHistorySwift.js";
 import apiGetParcelHistorySwift from "./apiGetParcelHistorySwift.js";
 import apiParcelWeightHistorySwift from "./apiParcelWeightHistorySwift.js";
 import apiParcelProofOfDeliverySwift from "./apiParcelProofOfDeliverySwift.js";
+import apiGetPackageTypesSwift from "./apiGetPackageTypesSwift.js";
+import apiGetAllCitiesSwift from "./apiGetAllCitiesSwift.js";
 export default {
   pickSheetSwift,
   getShipperAdviceSwift,
   getShipperAdviceHistorySwift,
   apiGetParcelHistorySwift,
-  apiParcelWeightHistorySwift,apiParcelProofOfDeliverySwift
+  apiParcelWeightHistorySwift,
+  apiParcelProofOfDeliverySwift,
+  apiGetPackageTypesSwift,
+  apiGetAllCitiesSwift,
 };
