@@ -1,6 +1,6 @@
 input cancelParcelPayload {
-  vendorId: String
-  parcelId: String
+  vendorId: String!
+  parcelId: String!
 }
 type cancelParcelResponse {
   message: String

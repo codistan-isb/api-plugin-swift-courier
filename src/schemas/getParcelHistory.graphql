@@ -1,6 +1,6 @@
 input getParcelHistoryPayload {
-  vendorId: String
-  parcelId: String
+  vendorId: String!
+  parcelId: String!
 }
 type getParcelHistoryResponse {
   date: String

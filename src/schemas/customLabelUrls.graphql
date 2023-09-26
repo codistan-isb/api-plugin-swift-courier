@@ -1,6 +1,6 @@
 input customLabelUrlsInput {
-  parcel_ids: String
-  dimensions: String
+  parcel_ids: String!
+  dimensions: String!
 }
 type customLabelUrlsResponse {
   status: String

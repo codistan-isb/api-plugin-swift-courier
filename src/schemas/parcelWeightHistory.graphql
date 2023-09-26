@@ -1,6 +1,6 @@
 input parcelWeightHistoryPayload {
-  vendorId: String
-  parcelId: String
+  vendorId: String!
+  parcelId: String!
 }
 type parcelWeightHistoryResponse {
   weight: Float

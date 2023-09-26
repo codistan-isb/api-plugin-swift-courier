@@ -1,6 +1,6 @@
 input apiParcelProofOfDeliveryPayload {
-  vendorId: String
-  parcelId: String
+  vendorId: String!
+  parcelId: String!
 }
 type getParcelProofOfDeliveryResponse {
   attempts: Int

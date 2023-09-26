@@ -2,7 +2,7 @@
   "name": "@codistan-isb/api-plugin-swift-courier",
   "description": "Boilerplate Swift Courier plugin for the Reaction API",
   "label": "Swift Courier",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "type": "module",
   "engines": {

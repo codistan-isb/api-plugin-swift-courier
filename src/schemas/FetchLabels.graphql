@@ -1,6 +1,6 @@
 input FetchLabelsInput {
-  parcel_ids: String
-  response_type: String
+  parcel_ids: String!
+  response_type: String!
 }
 type FetchLabelsInputResponse {
   status: String
